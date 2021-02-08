@@ -90,7 +90,7 @@
 //    UIWindow *top = app.windows.lastObject;
 //    if (key && key.windowLevel > top.windowLevel) top = key;
 //    if (top == self) return;
-    self.windowLevel = hide ? key.windowLevel - 1 : key.windowLevel + 1;
+    self.windowLevel = hide ? -1 : key.windowLevel + 1;
 }
 
 
